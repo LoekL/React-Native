@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({ whenPressed, children }) => {
+export default Button = ({ whenPressed, children }) => {
   const { buttonStyle, textStyle } = styles;
   return (
     <TouchableOpacity
@@ -35,5 +35,3 @@ const styles = {
     paddingBottom: 10
   }
 };
-
-export default Button;

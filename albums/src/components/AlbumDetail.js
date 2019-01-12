@@ -4,7 +4,7 @@ import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
 
-const AlbumDetail = ({ album }) => {
+const AlbumDetail = ({ album }) => { // unpack props.album into album
   const {
     title,
     artist,
@@ -73,16 +73,22 @@ const styles = {
   },
   imageStyle: {
     height: 300,
-    flex: 1,
-    width: null
+    flex: 1,      // spread out as far as possible
+    width: null   // spread out as far as possible
   }
 };
+
 export default AlbumDetail;
 
-// {
-// artist: "Taylor Swift"
-// image: "https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg"
-// thumbnail_image: "https://i.imgur.com/K3KJ3w4h.jpg"
-// title: "Taylor Swift"
-// url: "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6"
-// }
+/*
+Albums data:
+
+[{
+  artist: "Taylor Swift"
+  image: "https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg"
+  thumbnail_image: "https://i.imgur.com/K3KJ3w4h.jpg"
+  title: "Taylor Swift"
+  url: "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6"
+}, ...]
+
+*/

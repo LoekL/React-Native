@@ -61,6 +61,7 @@ There are two types of Components: **Functional** & **Class**
   - Used for presenting static data
   - Cannot handle fetching data
   - Easy to write
+  - These are functions, so you can call props like `props.name`
 
 ```javascript
 const Header = () => {
@@ -70,9 +71,10 @@ const Header = () => {
 
 - Class Component
   - Used for dynamic sources of data
-  - Handles any data that might change (fetching data, user events, etc)
+  - Handles any data that might change (fetching data, user events, etc), by updating the **State**
   - Knows when it gets rendered to the device (useful for data fetching)
   - More code to write
+  - These are classes, so you can call props like `this.props.name`
 
 ```javascript
 // Component is a base-class provided by react
@@ -95,3 +97,9 @@ Where to find logs?
 - In the iOS simulator, press: **Cmd+D** to open up the development menu.
 - Click on debug remotely, which will open up **http://localhost:8081/debugger-ui/**
   - Note that you need to visit the page via the Simulator, else it won't work.
+
+Layout: Flex Box FAQ
+
+- https://medium.freecodecamp.org/an-animated-guide-to-flexbox-d280cf6afc35
+- https://codedaily.io/tutorials/34/React-Native-Layout-Examples
+- http://flexboxfroggy.com/
