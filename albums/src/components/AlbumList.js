@@ -44,7 +44,8 @@ This section introduces a library called Axios, which currently has some compati
 If you have any issues with Axios, check out this thread:
 https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/questions/1924782
 
-You can use the native 'fetch' library in place of Axios.
+You can use the native 'fetch' library in place of Axios:
+https://facebook.github.io/react-native/docs/network
 
 --
 Albums data:
